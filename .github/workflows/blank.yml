@@ -14,11 +14,14 @@ jobs:
     
     runs-on: ubuntu-latest
     steps:
+      - shell: bash
+        env:
+          ACCESS_PASS: ${{ ACCESS_KEY_SF }} 
       - run: echo test test test
       - run: npm install sfdx-cli -g
       - run: sfdx --version
       - run: touch access_pass.key
-      - run: echo ${{ ACCESS_KEY_SF }} 
+      - run: echo $ACCESS_PASS
       #> access_pass.key
       #- run: sfdx force:auth:sfdxurl:store -f "access_pass.key" -a salesforce_test.org -d
       #- run: sfdx force:org:display -u salesforce_test.org
