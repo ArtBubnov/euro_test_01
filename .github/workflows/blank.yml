@@ -17,10 +17,10 @@ jobs:
       - shell: bash
         env:
           ACCESS_PASS: ${{ ACCESS_KEY_SF }} 
-      - run: echo test test test
-      - run: npm install sfdx-cli -g
-      - run: sfdx --version
-      - run: touch access_pass.key
+      #- run: echo test test test
+      #- run: npm install sfdx-cli -g
+      #- run: sfdx --version
+      #- run: touch access_pass.key
       - run: echo ${{ env.ACCESS_KEY_SF }} 
       #> access_pass.key
       #- run: sfdx force:auth:sfdxurl:store -f "access_pass.key" -a salesforce_test.org -d
