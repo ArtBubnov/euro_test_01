@@ -21,7 +21,7 @@ jobs:
       - run: npm install sfdx-cli -g
       - run: sfdx --version
       - run: touch access_pass.key
-      - run: echo "$ACCESS_PASS"
+      - run: echo ${{ env.ACCESS_KEY_SF }} 
       #> access_pass.key
       #- run: sfdx force:auth:sfdxurl:store -f "access_pass.key" -a salesforce_test.org -d
       #- run: sfdx force:org:display -u salesforce_test.org
