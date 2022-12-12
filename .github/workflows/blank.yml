@@ -15,3 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo test test test
+      - run: npm install sfdx-cli -g
+      - run: sfdx --version
