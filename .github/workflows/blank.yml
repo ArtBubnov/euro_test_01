@@ -14,7 +14,8 @@ jobs:
     
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ secrets.ACCESS_KEY_SF }}
+      - name: echo global war test
+        run: echo ${{ secrets.ACCESS_KEY_SF }}
 
       - run: echo test test test
       - run: npm install sfdx-cli -g
