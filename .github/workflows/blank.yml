@@ -14,9 +14,9 @@ jobs:
     
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        env:
-          ACCESS_PASS: ${{ ACCESS_KEY_SF }} 
+      #- shell: bash
+        #env:
+          #ACCESS_PASS: ${{ ACCESS_KEY_SF }} 
       - run: echo test test test
       #- run: echo ${{ env.ACCESS_KEY_SF }}
       #- run: echo test test test
