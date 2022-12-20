@@ -18,7 +18,7 @@ jobs:
           name: "first test"
           command: npm --version
           command: npm install sfdx-cli -g
-          command: sfdx --version
+          #command: sfdx --version
 
 workflows:
   say-hello-workflow:
