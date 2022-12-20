@@ -13,8 +13,8 @@ jobs:
   test:
     docker:
       - image: cimg/node:stable
-      steps:
-        - run:
+    steps:
+      - run:
           name: "first test"
           command: npm --version
 
